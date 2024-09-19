@@ -1,38 +1,90 @@
-.App {
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  color:rgb(240, 141, 182);
+}
+
+nav ul {
+  list-style: none;
+  background-color: rgb(240, 141, 182);
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+nav ul li a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
+
+/* Sections */
+section {
+  padding: 50px;
+  margin: 10px;
+}
+
+#home {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.image-content{
+  max-height: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#about, #projects, #contact {
+  background-color: white;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Projects Section */
+.project {
+  margin: 20px 0;
+}
+
+/* Contact Form Styles */
+form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+form label {
+  margin: 10px 0 5px;
+}
+
+form input, form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px;
+  background-color: rgb(240, 141, 182);
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form button:hover {
+  background-color: rgb(201, 142, 195);
 }
